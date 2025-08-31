@@ -1,0 +1,29 @@
+import React from 'react';
+
+export interface MonitorMobbileBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const MonitorMobbileBroken: React.FC<MonitorMobbileBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 6.74C2 3.37 2.84 2.53 6.21 2.53H16.74C20.11 2.53 20.95 3.37 20.95 6.74" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 16.95H6.21C2.84 16.95 2 16.11 2 12.74V10.85" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 21.47V16.95" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 12.95H10" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.73999 21.47H9.99999" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M22 12.8C22 10.43 21.41 9.84 19.04 9.84H15.49C13.12 9.84 12.53 10.43 12.53 12.8V18.51C12.53 20.88 13.12 21.47 15.49 21.47H19.04C21.41 21.47 22 20.88 22 18.51V16.94" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.2445 18.25H17.2535" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default MonitorMobbileBroken;

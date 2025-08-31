@@ -1,0 +1,30 @@
+import React from 'react';
+
+export interface MoneyChangeBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const MoneyChangeBroken: React.FC<MoneyChangeBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5 12C14.5 10.62 13.38 9.5 12 9.5C10.62 9.5 9.5 10.62 9.5 12C9.5 13.38 10.62 14.5 12 14.5" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M22 13.14V15C22 18.5 20 20 17 20H12" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 11V9C2 5.5 4 4 7 4H17C20 4 22 5.5 22 9" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.5 9.5V14.5" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 15.5H7.34003C7.98003 15.5 8.5 16.02 8.5 16.66V17.94" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.21997 14.28L2 15.5L3.21997 16.72" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.5 20.78H3.15997C2.51997 20.78 2 20.26 2 19.62V18.34" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.28027 22.0001L8.50024 20.7801L7.28027 19.5601" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default MoneyChangeBroken;

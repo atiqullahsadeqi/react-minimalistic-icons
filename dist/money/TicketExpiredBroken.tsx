@@ -1,0 +1,26 @@
+import React from 'react';
+
+export interface TicketExpiredBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const TicketExpiredBroken: React.FC<TicketExpiredBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 10.75V9.83002C22 6.13002 21.08 5.21002 17.38 5.21002H11V12" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.9099 20H17.3799C21.0799 20 21.9999 19.08 21.9999 15.38C20.7199 15.38 19.6899 14.34 19.6899 13.07" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.9999 17V20H8.22991C6.74991 20 5.87991 18.99 4.91991 16.67L4.73991 16.22C5.94991 15.74 6.53991 14.34 6.02991 13.13C5.53991 11.92 4.14991 11.34 2.92991 11.84L2.75991 11.41C1.31991 7.89 1.81991 6.66 5.33991 5.21L7.97991 4.13L10.9999 11.45V14" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.17 20H8" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default TicketExpiredBroken;

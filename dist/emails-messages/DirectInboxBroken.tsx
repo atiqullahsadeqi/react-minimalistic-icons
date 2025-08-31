@@ -1,0 +1,27 @@
+import React from 'react';
+
+export interface DirectInboxBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const DirectInboxBroken: React.FC<DirectInboxBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2V9L14 7" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 9L10 7" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M1.97998 13H6.38998C6.76998 13 7.10998 13.21 7.27998 13.55L8.44998 15.89C8.78998 16.57 9.47998 17 10.24 17H13.77C14.53 17 15.22 16.57 15.56 15.89L16.73 13.55C16.9 13.21 17.25 13 17.62 13H21.98" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.68994 19C3.64994 21.1 5.64994 22 8.99994 22H14.9999C19.9999 22 21.9999 20 21.9999 15V11C21.9999 6.73 20.5399 4.65 16.9999 4.13" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 4.13C3.46 4.65 2 6.73 2 11V15" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default DirectInboxBroken;

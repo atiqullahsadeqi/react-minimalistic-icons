@@ -1,0 +1,29 @@
+import React from 'react';
+
+export interface NoteAddTwotoneProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const NoteAddTwotone: React.FC<NoteAddTwotoneProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.4">
+<path d="M9.56055 18V13" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 15.5H7" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<path d="M8 2V5" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 2V5" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.8098 3.41998C19.1498 3.53998 20.8398 4.76998 20.9398 9.46998L21.0698 15.64C21.1498 19.76 20.1998 21.83 15.1998 21.94L9.19983 22.06C4.19983 22.16 3.15983 20.12 3.07983 16.01L2.93983 9.82998C2.83983 5.12998 4.48983 3.82998 7.80983 3.57998L15.8098 3.41998Z" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default NoteAddTwotone;

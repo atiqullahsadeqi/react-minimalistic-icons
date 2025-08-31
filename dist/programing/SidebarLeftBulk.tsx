@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface SidebarLeftBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const SidebarLeftBulk: React.FC<SidebarLeftBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M22 7.81V16.19C22 19.83 19.83 22 16.19 22H7.81C7.61 22 7.41 21.99 7.22 21.98C5.99 21.9 4.95 21.55 4.13 20.95C3.71 20.66 3.34 20.29 3.05 19.87C2.36 18.92 2 17.68 2 16.19V7.81C2 4.37 3.94 2.24 7.22 2.03C7.41 2.01 7.61 2 7.81 2H16.19C17.68 2 18.92 2.36 19.87 3.05C20.29 3.34 20.66 3.71 20.95 4.13C21.64 5.08 22 6.32 22 7.81Z" fill={color}/>
+<path d="M8.72022 2V22H7.81021C7.61022 22 7.41021 21.99 7.22021 21.98V2.03C7.41021 2.01 7.61022 2 7.81021 2H8.72022Z" fill={color}/>
+<path d="M14.9701 15.31C14.7801 15.31 14.5901 15.24 14.4401 15.09L11.8801 12.53C11.5901 12.24 11.5901 11.76 11.8801 11.47L14.4401 8.91C14.7301 8.62 15.2101 8.62 15.5001 8.91C15.7901 9.2 15.7901 9.68001 15.5001 9.97001L13.4801 12L15.5101 14.03C15.8001 14.32 15.8001 14.8 15.5101 15.09C15.3601 15.24 15.1701 15.31 14.9701 15.31Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default SidebarLeftBulk;

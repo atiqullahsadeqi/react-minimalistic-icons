@@ -4,9 +4,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build output
-dist/
+# Build output (keep dist/ for npm package)
 build/
+
+# Source SVG files (not needed after build)
+icons/
+
+# Test files
+test*/
+*.tgz
+example.*
 
 # Environment variables
 .env

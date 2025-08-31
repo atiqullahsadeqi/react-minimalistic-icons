@@ -1,0 +1,24 @@
+import React from 'react';
+
+export interface Link2TwotoneProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const Link2Twotone: React.FC<Link2TwotoneProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.06 10.9399C15.31 13.1899 15.31 16.8299 13.06 19.0699C10.81 21.3099 7.17003 21.3199 4.93003 19.0699C2.69003 16.8199 2.68003 13.1799 4.93003 10.9399" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path opacity="0.4" d="M10.59 13.41C8.25002 11.07 8.25002 7.27001 10.59 4.92001C12.93 2.57001 16.73 2.58001 19.08 4.92001C21.43 7.26001 21.42 11.06 19.08 13.41" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default Link2Twotone;

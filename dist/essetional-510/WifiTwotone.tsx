@@ -1,0 +1,26 @@
+import React from 'react';
+
+export interface WifiTwotoneProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const WifiTwotone: React.FC<WifiTwotoneProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M4.90991 11.8401C9.20991 8.5201 14.7999 8.5201 19.0999 11.8401" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 8.3601C8.06 3.6801 15.94 3.6801 22 8.3601" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.79004 15.4899C9.94004 13.0499 14.05 13.0499 17.2 15.4899" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path opacity="0.4" d="M9.3999 19.1499C10.9799 17.9299 13.0299 17.9299 14.6099 19.1499" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default WifiTwotone;

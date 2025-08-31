@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface Box1BrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const Box1Broken: React.FC<Box1BrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17004 7.43994L12 12.5499L20.77 7.46994" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 21.61V12.54" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.39001 13.2501V14.8301C2.39001 16.2101 3.38001 17.8901 4.59001 18.5601L9.93001 21.5301C11.07 22.1601 12.94 22.1601 14.08 21.5301L19.42 18.5601C20.63 17.8901 21.62 16.2101 21.62 14.8301V9.17006C21.62 7.79006 20.63 6.11006 19.42 5.44006L14.08 2.47006C12.94 1.84006 11.07 1.84006 9.93001 2.47006L4.59001 5.44006C3.38001 6.11006 2.39001 7.79006 2.39001 9.17006" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default Box1Broken;

@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface SimcardBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const SimcardBroken: React.FC<SimcardBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 11V17C3 20 5 22 8 22H16C19 22 21 20 21 17V10.07C21 8.74001 20.47 7.47003 19.54 6.53003L16.47 3.46002C15.53 2.52002 14.26 2 12.93 2H8C5 2 3 4 3 7" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.5 14L7.5 16L9.5 18" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.5 14L16.5 16L14.5 18" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default SimcardBroken;

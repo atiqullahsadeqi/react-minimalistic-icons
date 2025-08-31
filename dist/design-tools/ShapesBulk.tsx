@@ -1,0 +1,24 @@
+import React from 'react';
+
+export interface ShapesBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const ShapesBulk: React.FC<ShapesBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M11.75 7H11H7C4.24 7 2 9.24 2 12V17C2 19.76 4.24 22 7 22H12C14.76 22 17 19.76 17 17V13V12.25C17 9.35 14.65 7 11.75 7Z" fill={color}/>
+<path d="M16.5 2C13.63 2 11.28 4.2 11.03 7H11.75C14.65 7 17 9.35 17 12.25V12.97C19.8 12.72 22 10.36 22 7.5C22 4.46 19.54 2 16.5 2Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default ShapesBulk;

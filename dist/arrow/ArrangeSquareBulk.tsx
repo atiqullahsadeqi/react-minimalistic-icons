@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface ArrangeSquareBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const ArrangeSquareBulk: React.FC<ArrangeSquareBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z" fill={color}/>
+<path d="M17.85 13.53C17.77 13.35 17.63 13.2 17.44 13.12C17.35 13.08 17.25 13.06 17.15 13.06H6.85001C6.44001 13.06 6.10001 13.4 6.10001 13.81C6.10001 14.22 6.44001 14.56 6.85001 14.56H15.35L13.59 16.32C13.3 16.61 13.3 17.09 13.59 17.38C13.74 17.53 13.93 17.6 14.12 17.6C14.31 17.6 14.5 17.53 14.65 17.38L17.69 14.34C17.76 14.27 17.81 14.19 17.85 14.1C17.92 13.92 17.92 13.71 17.85 13.53Z" fill={color}/>
+<path d="M6.15 10.47C6.23 10.65 6.37 10.8 6.56 10.88C6.65 10.92 6.75 10.94 6.85 10.94H17.16C17.57 10.94 17.91 10.6 17.91 10.19C17.91 9.78003 17.57 9.44003 17.16 9.44003H8.66L10.42 7.68003C10.71 7.39003 10.71 6.91003 10.42 6.62003C10.13 6.33003 9.65 6.33003 9.36 6.62003L6.32 9.65003C6.25 9.72003 6.19 9.81003 6.15 9.90003C6.08 10.08 6.08 10.29 6.15 10.47Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default ArrangeSquareBulk;

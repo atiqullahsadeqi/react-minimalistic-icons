@@ -1,0 +1,28 @@
+import React from 'react';
+
+export interface CardRemove1BrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const CardRemove1Broken: React.FC<CardRemove1BrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 10.03H21.9" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.4599 20.53H6.34985C2.79985 20.53 1.8999 19.65 1.8999 16.14V7.91998C1.8999 4.73998 2.63987 3.71998 5.42987 3.55998C5.70987 3.54998 6.01985 3.53998 6.34985 3.53998H17.4599C21.0099 3.53998 21.9099 4.41998 21.9099 7.92998V12.34" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.8999 22.03C20.109 22.03 21.8999 20.2392 21.8999 18.03C21.8999 15.8209 20.109 14.03 17.8999 14.03C15.6908 14.03 13.8999 15.8209 13.8999 18.03C13.8999 20.2392 15.6908 22.03 17.8999 22.03Z" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.9701 19.15L16.8601 17.03" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.9501 17.0601L16.8301 19.1701" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5.8999 16.03H9.8999" stroke={color} strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default CardRemove1Broken;

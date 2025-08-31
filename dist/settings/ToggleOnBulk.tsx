@@ -1,0 +1,24 @@
+import React from 'react';
+
+export interface ToggleOnBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const ToggleOnBulk: React.FC<ToggleOnBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M7.35 3.86011H16.65C20.75 3.86011 22 5.11011 22 9.21011V14.7901C22 18.8901 20.75 20.1401 16.65 20.1401H7.35C3.25 20.1401 2 18.8901 2 14.7901V9.21011C2 5.11011 3.25 3.86011 7.35 3.86011Z" fill={color}/>
+<path d="M13.21 7.58008H15.44C17.69 7.58008 18.74 8.63008 18.74 10.8801V13.1101C18.74 15.3601 17.69 16.4101 15.44 16.4101H13.21C10.96 16.4101 9.91003 15.3601 9.91003 13.1101V10.8801C9.91003 8.63008 10.96 7.58008 13.21 7.58008Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default ToggleOnBulk;

@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface SecurityTimeBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const SecurityTimeBulk: React.FC<SecurityTimeBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M10.96 2.11001L5.46 4.17001C4.41 4.57001 3.55 5.81001 3.55 6.94001V15.04C3.55 15.85 4.08 16.92 4.73 17.4L10.23 21.51C11.2 22.24 12.79 22.24 13.76 21.51L19.26 17.4C19.91 16.91 20.44 15.85 20.44 15.04V6.94001C20.44 5.82001 19.58 4.57001 18.53 4.18001L13.03 2.12001C12.47 1.90001 11.53 1.90001 10.96 2.11001Z" fill={color}/>
+<path d="M12 16.25C9.38 16.25 7.25 14.12 7.25 11.5C7.25 8.88 9.38 6.75 12 6.75C14.62 6.75 16.75 8.88 16.75 11.5C16.75 14.12 14.62 16.25 12 16.25ZM12 8.25C10.21 8.25 8.75 9.71 8.75 11.5C8.75 13.29 10.21 14.75 12 14.75C13.79 14.75 15.25 13.29 15.25 11.5C15.25 9.71 13.79 8.25 12 8.25Z" fill={color}/>
+<path d="M11 13.25C10.75 13.25 10.5 13.12 10.36 12.89C10.15 12.53 10.26 12.07 10.62 11.86L11.38 11.4C11.46 11.35 11.5 11.27 11.5 11.19V10.26C11.5 9.85001 11.84 9.51001 12.25 9.51001C12.66 9.51001 13 9.84001 13 10.25V11.18C13 11.79 12.67 12.37 12.15 12.68L11.38 13.14C11.27 13.22 11.13 13.25 11 13.25Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default SecurityTimeBulk;

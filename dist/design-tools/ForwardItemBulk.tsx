@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface ForwardItemBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const ForwardItemBulk: React.FC<ForwardItemBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M21.25 5.77V9C21.25 11.29 20.52 12.02 18.23 12.02H18.13V10.38C18.13 7.26 16.74 5.87 13.62 5.87H11.98V5.77C11.98 3.48 12.71 2.75 15 2.75H18.23C20.52 2.75 21.25 3.48 21.25 5.77Z" fill={color}/>
+<path d="M16.63 10.38V13.62C16.63 15.9 15.9 16.63 13.62 16.63H10.38C8.1 16.63 7.37 15.9 7.37 13.62V10.38C7.37 8.1 8.1 7.37 10.38 7.37H13.62C15.9 7.37 16.63 8.1 16.63 10.38Z" fill={color}/>
+<path opacity="0.4" d="M12.02 18.13V18.23C12.02 20.52 11.29 21.25 9 21.25H5.77C3.48 21.25 2.75 20.52 2.75 18.23V15C2.75 12.71 3.48 11.98 5.77 11.98H5.87V13.62C5.87 16.74 7.26 18.13 10.38 18.13H12.02Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default ForwardItemBulk;

@@ -1,0 +1,25 @@
+import React from 'react';
+
+export interface ScrollBulkProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const ScrollBulk: React.FC<ScrollBulkProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z" fill={color}/>
+<path d="M9.6002 15.78C9.4102 15.78 9.2202 15.71 9.07019 15.56L6.5802 13.07C5.9902 12.48 5.9902 11.53 6.5802 10.94L9.07019 8.45001C9.36019 8.16001 9.8402 8.16001 10.1302 8.45001C10.4202 8.74001 10.4202 9.22001 10.1302 9.51001L7.6402 12L10.1302 14.5C10.4202 14.79 10.4202 15.27 10.1302 15.56C9.9802 15.7 9.7902 15.78 9.6002 15.78Z" fill={color}/>
+<path d="M14.3998 15.78C14.2098 15.78 14.0198 15.71 13.8698 15.56C13.5798 15.27 13.5798 14.79 13.8698 14.5L16.3598 12L13.8698 9.5C13.5798 9.21 13.5798 8.73 13.8698 8.44C14.1598 8.15 14.6398 8.15 14.9298 8.44L17.4198 10.93C18.0098 11.52 18.0098 12.47 17.4198 13.06L14.9298 15.55C14.7898 15.7 14.5898 15.78 14.3998 15.78Z" fill={color}/>
+</svg>
+
+  );
+};
+
+export default ScrollBulk;

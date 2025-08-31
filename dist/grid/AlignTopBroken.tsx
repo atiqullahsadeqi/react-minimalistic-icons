@@ -1,0 +1,26 @@
+import React from 'react';
+
+export interface AlignTopBrokenProps {
+  size?: number | string;
+  color?: string;
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+const AlignTopBroken: React.FC<AlignTopBrokenProps> = ({ 
+  size = 24, 
+  color = "currentColor", 
+  ...props 
+}) => {
+  return (
+    <svg {...props} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.26 5.10001V16.9C19.26 18.4 18.62 19 17.03 19H15.99C14.4 19 13.76 18.4 13.76 16.9V5.10001" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.76 5.10001V11.9C10.76 13.4 10.12 14 8.53003 14" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5.26001 5.10001V11.9" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 5H22" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+
+  );
+};
+
+export default AlignTopBroken;
