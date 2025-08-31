@@ -1,0 +1,45 @@
+{
+  "name": "react-minimalistic-icons",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of minimalistic SVG icons for React and Next.js applications",
+  "main": "dist/index.ts",
+  "module": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "icons",
+    "svg",
+    "minimalistic",
+    "ui",
+    "components"
+  ],
+  "author": "Atiqullah Sadeqi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atiqullahsadeqi/react-minimalistic-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atiqullahsadeqi/react-minimalistic-icons/issues"
+  },
+  "homepage": "https://github.com/atiqullahsadeqi/react-minimalistic-icons#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0"
+  }
+}
